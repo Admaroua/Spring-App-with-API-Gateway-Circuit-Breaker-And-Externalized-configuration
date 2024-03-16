@@ -9,21 +9,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Config-server" />
         <module name="ms-formation" />
-        <module name="Gatewey" />
+        <module name="API-Gateway" />
         <module name="ms-scolarite" />
         <module name="Eureka-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="app" target="17" />
       <module name="Gateway" target="17" />
+      <module name="Gatewey" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-Gateway" options="-parameters" />
       <module name="Config-server" options="-parameters" />
       <module name="Eureka-registry" options="-parameters" />
       <module name="Gateway" options="-parameters" />
       <module name="Gatewey" options="-parameters" />
+      <module name="app" options="-parameters" />
       <module name="ms-formation" options="-parameters" />
       <module name="ms-scolarite" options="-parameters" />
     </option>
